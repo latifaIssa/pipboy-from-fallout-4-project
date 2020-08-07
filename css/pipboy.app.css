@@ -1,1 +1,83 @@
- 
+@font-face{
+    font-family: pipBoy;
+    src: url(../monofonto.ttf);
+}
+body{
+    font-family: pipBoy;
+    color: #14f217;
+    background: #272b23;
+}
+
+body::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.5) 1px, rgba(0,0,0,.4) 1px, transparent 1px, transparent 2px)
+    opicity: .3;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
+ul > li.nav-item > a.nav-link, ul > li,.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link{
+    color: #14f217;
+}
+
+.navbar{
+    border-bottom: 2px solid;
+    margin:0px 10px;
+}
+
+.navbar::before, .navbar::after{
+    height: 7px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index:5000;
+    background: #14f217;
+     
+    bottom:-8px;
+}
+
+.navbar-nav{
+    width:100%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav >.nav-link, .navbar-light .navbar-nav .nav-link{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.navbar-light ul.navbar-nav > li{
+    display:block;
+    position:relative;
+    width:100%;
+}
+.navbar::after{
+    right: 0px;
+}
+
+.navbar::before{
+    left: 0px;
+}
+
+
+.center-image img{
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 100px;
+    filter: grayscale(1) sepia(100% ) hue-rotate(55deg) saturate(7) brightness(1) contrast(0.9);
+}
+.pip-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100% ;
+    margin:10px;
+    
+}
