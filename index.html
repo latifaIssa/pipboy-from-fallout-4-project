@@ -38,38 +38,143 @@
     
 </nav>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#status" class="nav-link" data-toggle="tab">STATUS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#special" class="nav-link" data-toggle="tab">SPECIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
+                </li>
+            </ul>
 
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a href="#status" class="nav-link" data-toggle="tab">STATUS</a>
-    </li>
-    <li class="nav-item">
-        <a href="#special" class="nav-link" data-toggle="tab">SPECIAL</a>
-    </li>
-    <li class="nav-item">
-        <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
-    </li>
-</ul>
+            <div class="tab-content">
+                
+                <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+                    <!--  <div class="row">
+                        <div class="col-12">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="center-image">
+                        <img src="img/status.png"/>
+                    </div>
+                    <div class="stat-bars">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w30" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w20"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                
+                            </div>
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                
+                            </div>
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w40"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator w70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="tab-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="stat-bar">
+                                <div class="level-progress"></div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
 
-    <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
-        <div class="center-image">
-            <img src="img/status.png"/>
+                <div class="tab-pane fade show " id="special" role="tabpanel" aria-labelledby="special-tab">
+                    special tab
+                </div>
+
+                <div class="tab-pane fade show" id="perks" role="tabpanel" aria-labelledby="perks-tab">
+                    perks tab
+                </div> 
+            </div>
+
         </div>
-    </div>
-
-    <div class="tab-pane fade show " id="special" role="tabpanel" aria-labelledby="special-tab">
-        special tab
-    </div>
-
-    <div class="tab-pane fade show" id="perks" role="tabpanel" aria-labelledby="perks-tab">
-        perks tab
-    </div>
- 
-
-    
+    </div>     
 </div>
+
 <navbar class=" navbar-light pip-footer">
     <div class="row">
 
@@ -78,11 +183,13 @@
         </div>
 
         <div class="col-6">
-            Level 1
-            <div class="level-progress"></div>
+            <span>Level 1</span>
+            <div class="level-progress">
+                <div class="level-progress-indicator"></div>
+            </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 text-right">
             AP 50/50
         </div>
 
